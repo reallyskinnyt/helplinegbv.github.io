@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 600px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 0px 2px;
+}
+
+.wrapper h2 {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    border: 2px dotted rgb(41, 58, 52);
+    color: rgb(6, 172, 116);
+}
+
+h4 {
+    padding: bottom 5px;
+    color: rgb(6, 172, 116);
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+.input-box {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+
+.input-box:last-child {
+    margin-right: 0px;
+}
+
+.name {
+    padding: 20px 10px 20px 40px;
+    width: 100%;
+    border: 1px solid;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    border-radius: 7px;
+    color: rgb(41, 58, 52);
+}
+
+.name:focus,
+.DOB:focus {
+    -webkit-box-shadow: 0 0 8px 4px rgb(6, 172, 116);
+    -moz-box-shadow: 0 0 8px 4px rgb(6, 172, 116);
+    box-shadow: 0 0 8px 4px rgb(6, 172, 116);
+    border: 2px solid olivedrab;
+    background-color: rgb(6, 172, 116);
+    transition: 0.5s;
+    color: aliceblue;
+}
+
+.DOB {
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.radio {
+    display: none;
+}
+
+.input-box label {
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.radio:checked+label {
+    background-color: rgb(6, 172, 116);
+    transition: 0.4s;
+    color: aliceblue;
+}
+
+.input-box select {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-box select:focus {
+    background-color: rgb(6, 172, 116);
+    color: aliceblue;
+}
+
+button {
+    width: 560px;
+    background: transparent;
+    background: rgb(6, 172, 116);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: olivedrab;
+}

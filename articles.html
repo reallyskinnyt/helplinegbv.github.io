@@ -1,0 +1,112 @@
+<?php include("header.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Articles and solutions page.</title>
+</head>
+
+<body>
+    <style>
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+        
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>GBV Headlines and solutions</h2>
+    <br>
+    <p>Link Tabs:</p>
+
+    <button class="collapsible">Open Link</button>
+    <div class="content">
+        <p></p>
+        <a href="article2.html">End Gender Based Violence</a>
+    </div>
+    <br>
+    <p>Tab 1:</p>
+    <button class="collapsible">Open link 2</button>
+    <div class="content">
+        <a style="text-decoration: none; " href="https://www.unwomen.org/en/hq-complex-page/covid-19-rebuilding-for-resilience/gender-based-violence?gclid=CjwKCAjwv-GUBhAzEiwASUMm4nxCh3HGFVbNMK1k9Xg6wpf_untpFrbPGY96H-Eha6CX3wGqQahvaxoCMhcQAvD_BwE">This link will refer you to an external site that will help you to learn more about GBV and what it is.
+        </a>
+    </div>
+    <button class="collapsible">Open link 3</button>
+    <div class="content">
+        <a href="https://genderjustice.org.za/helpline-numbers/">Click this link for emergency and contact details.</a>
+    </div>
+
+    <!-- <button class="collapsible">Open Section 3</button>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div> -->
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
+<?php
+include("footer.php");
+?>
